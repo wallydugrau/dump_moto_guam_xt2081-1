@@ -1,0 +1,39 @@
+<xml>
+    <ctbk_version>15</ctbk_version>
+    <wifi_tx_pwr>
+        <Default_5GHZ   index="0">19</Default_5GHZ> <!--5G, Max power-->
+        <State1_5GHZ    index="1">18</State1_5GHZ>  <!--5G,WLAN+WWAN-->
+        <State2_5GHZ    index="2">17</State2_5GHZ>  <!--5G,MHS, WLAN+WAN-->
+        <Default_2GHZ   index="3">19</Default_2GHZ> <!--2G, Max power-->
+        <State1_2GHZ    index="4">17</State1_2GHZ>  <!--2G,WLAN+WWAN-->
+        <State2_2GHZ    index="5">17</State2_2GHZ>  <!--2G,MHS, WLAN+WAN-->
+        <State4_5GHZ    index="6">16</State4_5GHZ>  <!--5G,At head, WLAN only-->
+        <State5_5GHZ    index="7">16</State5_5GHZ>  <!--5G,At head, WLAN+WWAN-->
+        <State6_5GHZ    index="8">15</State6_5GHZ>  <!--5G,Body-Worn, WLAN only-->
+        <State7_5GHZ    index="9">15</State7_5GHZ>  <!--5G,Body-Worn, WLAN+WWAN-->
+        <State4_2GHZ    index="10">16</State4_2GHZ> <!--2G,At head, WLAN only-->
+        <State5_2GHZ    index="11">16</State5_2GHZ> <!--2G,At head, WLAN+WWAN-->
+        <State6_2GHZ    index="12">17</State6_2GHZ> <!--2G,Body-Worn, WLAN only-->
+        <State7_2GHZ    index="13">17</State7_2GHZ> <!--2G,Body-Worn, WLAN+WWAN-->
+    </wifi_tx_pwr>
+    <wifi_tx_pwr_5g_split_band>
+        <Band1_5GHZ_At_Head   index="0">16</Band1_5GHZ_At_Head>
+        <Band2_5GHZ_At_Head   index="1">16</Band2_5GHZ_At_Head>
+        <Band3_5GHZ_At_Head   index="2">16</Band3_5GHZ_At_Head>
+        <Band4_5GHZ_At_Head   index="3">11</Band4_5GHZ_At_Head>
+        <Band1_5GHZ_Body_Worn   index="4">15</Band1_5GHZ_Body_Worn>
+        <Band2_5GHZ_Body_Worn   index="5">15</Band2_5GHZ_Body_Worn>
+        <Band3_5GHZ_Body_Worn   index="6">15</Band3_5GHZ_Body_Worn>
+        <Band4_5GHZ_Body_Worn   index="7">11</Band4_5GHZ_Body_Worn>
+    </wifi_tx_pwr_5g_split_band>
+    <sar_sensors>
+        <sensor type="prox_front"           index="0">vcnl36866 Proximity Sensor Wakeup</sensor>
+        <sensor type="prox_back"            index="1">NULL</sensor>
+        <sensor type="cap_bottom"           index="2">NULL</sensor>
+        <sensor type="no sensor here"       index="3">NULL</sensor>
+        <sensor type="cap_top"              index="4">NULL</sensor>
+        <sensor type="no sensor here"       index="5">NULL</sensor>
+    </sar_sensors>
+    <!--OB5 config: 5 = 00000101b (cap_bottom|cap_top)-->
+    <ob5_sensor_config>5</ob5_sensor_config>
+</xml>
